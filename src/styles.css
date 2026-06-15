@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+html {
+    height: 100%;
+}
+body {
+    display: grid;
+    grid-template-columns: 2fr 9fr;
+    grid-template-rows: 1fr;
+    height: 100%;
+}
+ul {
+    list-style: none;
+    background-color: #f1f1ee;
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    /*justify-content:*/
+    padding: 25% 4%;
+}
+li {
+    border-radius: 5px;
+    padding: 3%;
+}
+li:hover {
+    background-color: #ecece7;
+}
+.content {
+
+}
