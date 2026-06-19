@@ -116,3 +116,18 @@ dialog div {
     flex-direction: column;
     margin: 4%;
 }
+.todo-list-element {
+    display: flex;
+    background-color: #BFBDC1;
+    align-items: center;
+    margin: 1%;
+    gap: 10px;
+    border-radius: 4px;
+    border-left: 4px solid #2c89f1;
+}
+.todo-checkbox {
+    height: 20px;
+    width: 20px;
+    accent-color: #2c89f1;
+    margin: 5px;
+}

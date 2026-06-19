@@ -3,7 +3,7 @@ import {DOM} from "./DOMDictionary.js";
 
 export class todoListClass {
     constructor() {
-        this.todoItems = [];
+        this.todoItems = [new todoItem("zak"), new todoItem("adam")];
     }
     addTodoItems () {
         const newTodoItem = new todoItem(DOM.titleInput.value, DOM.descInput.value, DOM.dueDate.value, DOM.priority.value);
@@ -12,6 +12,6 @@ export class todoListClass {
         this.todoItems.push(newTodoItem);
     }
     showTodoItems () {
-        console.log(this.todoItems);
+        return this.todoItems;
     }
 }
