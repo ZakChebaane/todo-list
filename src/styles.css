@@ -18,7 +18,7 @@ body {
     height: 85vh;
     background-color: white;
     border-radius: 8px;
-    box-shadow: 3px 3px 5px #4b4254;
+    box-shadow: 2px 2px 10px #545256;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 2fr 12fr 1fr;
 }
@@ -58,7 +58,7 @@ li:hover {
     background-color: #BFBDC1;
     border-radius: 0 8px 8px 0;
 }
-.content {
+#content {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
     background-color: white;
@@ -76,4 +76,43 @@ li:hover {
 }
 #todo-img {
     height: 70px;
+}
+dialog {
+    margin: auto;
+    border: none;
+    border-radius: 10px;
+    padding: 4%;
+}
+dialog[open] {
+    display: flex;
+    flex-direction: column;
+}
+#closeTodo {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    border: none;
+    background-color: white;
+}
+#closeTodo:hover {
+    color: #de0000;
+}
+dialog div {
+    display: flex;
+}
+#add-task {
+    color: #2c89f1;
+}
+
+#add-task:active {
+    background-color: #b2b2b4;
+}
+.modalForm {
+    display: flex;
+    flex-direction: column;
+}
+.formBlocks {
+    display: flex;
+    flex-direction: column;
+    margin: 4%;
 }

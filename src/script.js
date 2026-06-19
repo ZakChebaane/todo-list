@@ -1,19 +1,12 @@
 import "./styles.css";
+import {addTodoItem} from "./addTodoItem.js";
 
 
-class todoItem {
-    constructor(title, description, dueDate, priority, checklist) {
-        this.title = title;
-        this.description = description;
-        this.dueDate = dueDate;
-        this.priority = priority;
-        this.checklist = checklist;
-    }
-}
-const myTodo = new todoItem(
-    "go to beach",
-    "swim at beach",
-    "15/06/2026",
-    1,
-    false,
-);
+const addTaskBtn = document.getElementById("add-task");
+const homeBtn = document.getElementById("home");
+const projectsBtn = document.getElementById("projects");
+const contents = document.getElementById("content");
+addTaskBtn.addEventListener("click", (e) => {
+    contents.textContent = "";
+    addTodoItem();
+})

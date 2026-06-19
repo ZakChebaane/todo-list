@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,8 +21,30 @@
                 </li>
             </ul>
         </div>
-        <div class="content"></div>
+        <div id="content"></div>
         <div class="footer">The Odin Project © Zak Chebaane</div>
     </div>
+    <dialog id="todoModal">
+        <button id="closeTodo">X</button>
+        <form method="dialog" class="modalForm">
+            <div class="formBlocks">
+                <label for="name-todo">Title</label>
+                <input id="name-todo" type="text">
+            </div>
+            <div class="formBlocks">
+                <label for="desc-todo">Description</label>
+                <input id="desc-todo" type="text">
+            </div>
+            <div class="formBlocks">
+                <label for="dueDate-todo">Due Date</label>
+                <input id="dueDate-todo" type="text">
+            </div>
+            <div class="formBlocks">
+                <label for="priority-todo">Priority</label>
+                <input id="priority-todo" type="text">
+            </div>
+            <button id="submit-btn" type="submit">Add Task</button>
+        </form>
+    </dialog>
 </body>
 </html>
