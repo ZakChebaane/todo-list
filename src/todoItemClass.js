@@ -1,9 +1,9 @@
 export class todoItem {
-    constructor(title, description, dueDate, priority, checklist) {
+    constructor(title, description, dueDate, priority) {
         this.title = title;
         this.description = description;
         this.dueDate = dueDate;
         this.priority = priority;
-        this.checklist = checklist;
+        this.checklist = false;
     }
 }
