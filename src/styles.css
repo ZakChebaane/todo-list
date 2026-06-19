@@ -124,10 +124,22 @@ dialog div {
     gap: 10px;
     border-radius: 4px;
     border-left: 4px solid #2c89f1;
+    justify-content: space-between;
 }
 .todo-checkbox {
     height: 20px;
     width: 20px;
     accent-color: #2c89f1;
     margin: 5px;
+}
+.divSplitter1 , .divSplitter2 {
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+}
+.deleteBtn {
+    border: none;
+}
+.deleteBtn:hover {
+    color: #de0000;
 }

@@ -11,6 +11,13 @@ export class todoListClass {
         DOM.modal.close();
         this.todoItems.push(newTodoItem);
     }
+    removeTodoItem (objectID) {
+        for (let i = 0; i < this.todoItems.length; i++) {
+            if (this.todoItems[i].id === objectID) {
+                this.todoItems.splice(i, 1);
+            }
+        }
+    }
     showTodoItems () {
         return this.todoItems;
     }

@@ -4,7 +4,7 @@ import {DOM} from "./DOMDictionary.js";
 import {todoItem} from "./todoItemClass.js";
 import {DOMHandler} from "./DOMHandlerClass.js";
 
-const myTodoList = new todoListClass();
+export const myTodoList = new todoListClass();
 const myDOMHandler = new DOMHandler();
 DOM.addTaskBtn.addEventListener("click", (e) => {
     DOM.modal.showModal();
