@@ -87,14 +87,14 @@ dialog[open] {
     display: flex;
     flex-direction: column;
 }
-#closeTodo {
+.closeTodo {
     position: absolute;
     top: 3%;
     right: 3%;
     border: none;
     background-color: white;
 }
-#closeTodo:hover {
+.closeTodo:hover {
     color: #de0000;
 }
 dialog div {
@@ -127,8 +127,8 @@ dialog div {
     justify-content: space-between;
 }
 .todo-checkbox {
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
     accent-color: #2c89f1;
     margin: 5px;
 }
@@ -136,10 +136,30 @@ dialog div {
     display: flex;
     align-items: center;
     margin: 0 5px;
+    gap: 10px;
+}
+.divSplitter2 {
+    gap: 25px;
 }
 .deleteBtn {
     border: none;
 }
 .deleteBtn:hover {
     color: #de0000;
+}
+.details-btn {
+    border: 3px solid grey;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 3px;
+}
+.details-btn:hover {
+    background-color: #b0b0b4;
+}
+.details-btn:active {
+    background-color: #a1a1a4;
+}
+#detailsContainer {
+    display: flex;
+    flex-direction: column;
 }

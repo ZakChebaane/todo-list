@@ -13,4 +13,6 @@ export const DOM = {
     descInput : document.getElementById("desc-todo"),
     dueDate : document.getElementById("dueDate-todo"),
     priority : document.getElementById("priority-todo"),
+    detailsModal : document.getElementById("detailsModal"),
+    detailsModalDiv : document.getElementById("detailsContainer"),
 }
